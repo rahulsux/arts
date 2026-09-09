@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 33% 97%;
+    --foreground: 26 22% 18%;
+
+    --card: 40 38% 99%;
+    --card-foreground: 26 22% 18%;
+
+    --popover: 40 38% 99%;
+    --popover-foreground: 26 22% 18%;
+
+    --primary: 26 45% 38%;
+    --primary-foreground: 42 33% 97%;
+
+    --secondary: 34 28% 88%;
+    --secondary-foreground: 26 22% 18%;
+
+    --muted: 36 20% 90%;
+    --muted-foreground: 28 12% 45%;
+
+    --accent: 32 55% 50%;
+    --accent-foreground: 42 33% 97%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 42 33% 97%;
+
+    --border: 34 22% 86%;
+    --input: 34 22% 86%;
+    --ring: 26 45% 38%;
+
+    --success: 142 45% 40%;
+    --success-foreground: 142 50% 96%;
+
+    --warning: 38 80% 50%;
+    --warning-foreground: 38 80% 10%;
+
+    --chart-1: 26 45% 38%;
+    --chart-2: 32 55% 50%;
+    --chart-3: 142 45% 40%;
+    --chart-4: 38 80% 50%;
+    --chart-5: 0 72% 51%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 26 15% 10%;
+    --foreground: 42 25% 90%;
+
+    --card: 26 15% 13%;
+    --card-foreground: 42 25% 90%;
+
+    --popover: 26 15% 13%;
+    --popover-foreground: 42 25% 90%;
+
+    --primary: 32 55% 55%;
+    --primary-foreground: 26 15% 10%;
+
+    --secondary: 26 10% 20%;
+    --secondary-foreground: 42 25% 90%;
+
+    --muted: 26 10% 20%;
+    --muted-foreground: 36 10% 65%;
+
+    --accent: 32 50% 45%;
+    --accent-foreground: 42 25% 90%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 42 25% 90%;
+
+    --border: 26 10% 22%;
+    --input: 26 10% 22%;
+    --ring: 32 55% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .container-px {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  .container-mw {
+    @apply mx-auto max-w-7xl;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out both;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out both;
+  }
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out both;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
