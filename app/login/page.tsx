@@ -33,9 +33,9 @@ export default function LoginPage() {
           {/* Header */}
           <div className="mb-8">
             <Link href="/" className="inline-flex items-center gap-2 mb-6">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-600 text-white font-serif text-xl font-semibold">
-                A
-              </span>
+              <div className="flex h-10 w-10 items-center justify-center flex-shrink-0">
+                <img src="/logo.png" alt="AruArts Logo" className="h-10 w-10" />
+              </div>
               <span className="font-serif text-2xl font-semibold text-amber-600">AruArts</span>
             </Link>
             <h1 className="text-3xl font-bold text-foreground">Welcome Back</h1>

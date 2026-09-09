@@ -20,12 +20,26 @@ export const metadata: Metadata = {
     title: 'AruArts — Premium Wooden Home Decor',
     description:
       'Handcrafted wooden home decor designed to bring warmth and character to your space.',
-    images: [{ url: 'https://bolt.new/static/og_default.png' }],
+    url: 'https://aruarts.com',
+    type: 'website',
+    images: [
+      {
+        url: '/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'AruArts Logo',
+      }
+    ],
   },
   twitter: {
-    card: 'summary_large_image',
-    images: [{ url: 'https://bolt.new/static/og_default.png' }],
+    card: 'summary',
+    title: 'AruArts — Premium Wooden Home Decor',
+    description: 'Handcrafted wooden home decor designed to bring warmth to your space.',
+    images: ['/logo.png'],
   },
+  icons: {
+    icon: '/logo.png',
+  }
 };
 
 export default function RootLayout({

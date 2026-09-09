@@ -37,12 +37,9 @@ export default function Navbar() {
             </button>
 
             <Link href="/" className="group flex items-center gap-2">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition-transform duration-300 group-hover:rotate-[-8deg]">
-                <span className="font-serif text-xl font-semibold">A</span>
-              </span>
-              <span className="font-serif text-2xl font-semibold tracking-tight text-primary">
-                AruArts
-              </span>
+              <div className="flex h-10 w-10 items-center justify-center flex-shrink-0">
+                <img src="/logo.png" alt="AruArts Logo" className="h-10 w-10" />
+              </div>
             </Link>
 
             <nav className="hidden items-center gap-8 lg:flex">
@@ -125,9 +122,9 @@ export default function Navbar() {
           <aside className="animate-fade-in absolute bottom-0 left-0 top-0 w-[min(86%,360px)] overflow-y-auto bg-background p-6 shadow-2xl">
             <div className="mb-10 flex items-center justify-between">
               <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                  <span className="font-serif text-lg font-semibold">A</span>
-                </span>
+                <div className="flex h-9 w-9 items-center justify-center flex-shrink-0">
+                  <img src="/logo.png" alt="AruArts Logo" className="h-9 w-9" />
+                </div>
                 <span className="font-serif text-xl font-semibold text-primary">AruArts</span>
               </Link>
               <button

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <!-- Main figure/character -->
+  <circle cx="100" cy="50" r="25" fill="currentColor"/>
+  
+  <!-- Left arm -->
+  <path d="M 75 70 Q 50 75 40 110 Q 35 130 45 150" stroke="currentColor" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right arm -->
+  <path d="M 125 70 Q 150 75 160 110 Q 165 130 155 150" stroke="currentColor" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Body/torso curve -->
+  <path d="M 80 90 Q 85 120 80 160 Q 78 180 90 200" stroke="currentColor" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right body curve -->
+  <path d="M 120 90 Q 115 120 120 160 Q 122 180 110 200" stroke="currentColor" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
